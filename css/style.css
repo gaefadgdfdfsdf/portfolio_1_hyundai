@@ -1,0 +1,1336 @@
+#wrap{
+    max-width: 100vw;
+    overflow-x: hidden;
+   
+   
+}
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    right:0;
+    top: 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.nav-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+}
+
+.logo a{
+    display:block;
+    background-image: url(../img/logo_white.png);
+    width: 200px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.list:hover .dropdown{
+    display: block
+}
+
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label{
+    cursor: default;
+    color: #fff;
+    display: none;
+}
+
+
+.nav-toggle-label span, 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: "";
+    position: absolute;
+}
+
+
+.nav-toggle-label span::before{
+    bottom: 8px;
+}
+
+.nav-toggle-label span::after{
+    top: 8px
+}
+
+.nav-toggle:checked+.nav-toggle-label span {
+    background: transparent;
+}
+
+.nav-toggle:checked+.nav-toggle-label span::before {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+  
+.nav-toggle:checked+.nav-toggle-label span::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+.menu-list {
+    display:flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 400px;
+   
+}
+
+.menu-lis .list{
+    position: relative;
+    padding:1em;
+}
+
+.menu-list .list .nav-link {
+    display:block;
+    padding: 2.5rem;
+    color: #fff;
+   
+}
+
+.dropdown-icon {
+    display: none;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    stroke: #000;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+header:hover{
+    background-color: #fff;
+}
+
+header:hover .menu-list .list .nav-link{
+    color: #002060;
+}
+
+header:hover .logo a{
+    background-image: url(../img/logo.png);
+}
+
+
+
+
+.dropdown {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 90px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.1);
+
+}
+
+.list.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+
+
+.dropdown-menu {
+    width: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.dropdown-menu a{
+    color: #313131;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+
+
+#hyundai {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 20em;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+}
+
+
+#hyundai div {
+    position: relative;
+    top: 100px; /* 화면 아래에서 시작 */
+    opacity: 0; /* 초기에는 보이지 않게 */
+    
+}
+
+#hyundai div:nth-child(1){
+    animation: moveUp1 0.3s ease-out forwards;
+}
+
+@keyframes moveUp1 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100% {
+        top: -1px;
+        opacity: 1; /* 위로 올라가면서 보이게 */
+    }
+}
+
+
+#hyundai div:nth-child(2){
+    animation: moveUp2 0.4s ease-out forwards;
+}
+
+@keyframes moveUp2 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100% {
+        top: -1px;
+        opacity: 1; /* 위로 올라가면서 보이게 */
+    }
+}
+
+
+
+#hyundai div:nth-child(3){
+    animation: moveUp3 0.5s ease-out forwards;
+}
+
+@keyframes moveUp3 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100% {
+        top: -1px;
+        opacity: 1; /* 위로 올라가면서 보이게 */
+    }
+}
+
+
+#hyundai div:nth-child(4){
+    animation: moveUp4 0.6s ease-out forwards;
+}
+
+@keyframes moveUp4 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100% {
+        top: -1px;
+        opacity: 1; /* 위로 올라가면서 보이게 */
+    }
+}
+
+
+#hyundai div:nth-child(5){
+    animation: moveUp5 0.7s ease-out forwards;
+}
+
+@keyframes moveUp5 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100% {
+        top: -1px;
+        opacity: 1; /* 위로 올라가면서 보이게 */
+    }
+}
+
+
+
+#hyundai div:nth-child(6){
+    animation: moveUp6 0.8s ease-out forwards;
+}
+
+@keyframes moveUp6 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100% {
+        top: -1px;
+        opacity: 1; /* 위로 올라가면서 보이게 */
+    }
+}
+
+
+#hyundai div:nth-child(7){
+    animation: moveUp7 0.9s ease-out forwards;
+}
+
+@keyframes moveUp7 {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+    100% {
+        top: -1px;
+        opacity: 1; /* 위로 올라가면서 보이게 */
+    }
+}
+
+.scroller{
+    width:100%;
+}
+
+
+.scroll-content{
+    box-sizing: border-box;
+}
+
+.container .box{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: background-size 5s ease;
+
+}
+
+
+
+
+
+.container .box h1{
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: -2px;
+    font-size:70px;
+    margin-top: -100px;
+   
+    
+
+
+}
+
+.container .content1{
+    background-image: url('../img/bg_main_img1.jpg');
+   
+
+}
+
+.container .content2{
+    background-image: url('../img/bg_main_img2.png');
+    display: none;
+
+}
+
+.container .content3{
+    background-image: url('../img/bg_main_img3.png');
+    display: none;
+    
+
+}
+
+.sectoion1{
+    margin: 150px 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.sectoion1 img{
+    max-width: 100%;
+    display: block;
+}
+
+.sectoion1 .page1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1346px ;
+    gap: 8px;
+   
+}
+
+
+
+.page1 .car{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 544px;
+    height: 770px;
+    
+}
+
+
+.page1 .text{
+    align-items: center;
+    flex-direction: column;
+  
+    display: flex;
+}
+
+.page1 .text h1{
+    font-size: 40px;
+    color: #000;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.page1.card2 {
+    margin-top: 4em;
+}
+
+
+
+.sectoion2 .section_bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg_with_dimmed.jpg');
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section_bg h3{
+    font-size: clamp(14px, 6.867vw, 45px);
+    font-weight: 500;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    margin-top: -10vh;
+}
+
+.section_bg span{
+    font-size: 20px;
+}
+
+
+.section_bg h3 .text{
+    font-size: clamp(14px, 6.867vw, 45px);
+}
+
+
+
+
+.section3 {
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+
+.page-header {
+    max-width:1346px ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.page-header h2{
+    font-size: 90px;
+    font-weight: 600;
+    min-width: 50%;
+}
+
+.page-header ul{
+    display: flex;
+}
+
+
+.page-header li{
+    position: relative;
+    padding: 0 20px;
+}
+
+.page-header li:nth-child(2)
+::before {
+    display: flex;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 18px;
+    background: #999;
+    left: 0px;
+    top: 8px;
+}
+
+
+.page-header li:nth-child(3)
+::before {
+    display: flex;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 18px;
+    background: #999;
+    left: 0px;
+    top: 8px;
+}
+
+.page-header li:nth-child(4)
+::before {
+    display: flex;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 18px;
+    background: #999;
+    left: 0px;
+    top: 8px;
+}
+
+.page-header ul button {
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.carBox {
+    max-width: 1346px ;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.carBox ul{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.carBox li{
+    width: calc((100% - 30px) /2);
+    box-sizing: border-box;
+}
+
+
+
+.carBox .box1 .image-box{
+    width: 100%;
+    height: 600px;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/avantae.jpg);
+    border-radius: 20px;
+    position: relative;
+    
+}
+
+.carBox .box1 h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.carBox .box2 {
+    overflow: hidden;
+}
+
+
+.carBox .box2 > div{
+    display:flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.carBox .box2 .boxbg{
+    background-image: url(../img/santanpae.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.carBox .box2 .boxbg{
+    color: #fff;
+    text-align: center;
+    line-height: 300px;
+}
+
+.carBox .box2 .boxtext {
+    width: 100%;
+    margin-top:10px;
+    height: 290px;
+    border-radius: 20px;
+    background-color:  #000f2c;
+    text-align: center;
+    font-size:18px;
+    line-height: 24px;
+    position: relative;
+    /* padding-top: 17%; */
+    color: #eee;
+}
+
+
+.carBox .box2 .boxtext p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#footer {
+    border-top: 1px solid #d7d7d7;
+    box-sizing: border-box;
+    font-size: 13px;
+    width: 100%;
+}
+
+
+#footer > .cont {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+.img-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+
+#footer .menu {
+    gap: 5px 40px;
+}
+
+.select-box {
+   
+    border-bottom: 1px solid lightgray;
+    transition: border-bottom 0.3s;
+   
+    
+}
+
+#footer .select-box {
+    padding-right: 30px;
+    position: relative;
+    height: 80px;
+}
+
+.select-box, .select {
+    background-image: none;
+}
+
+
+
+
+.select option {
+    width: 100%;
+    font-weight: inherit;
+    padding: 20px;
+}
+
+#footer .select.family {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-weight: 600;
+}
+
+.select {
+    position: relative;
+    vertical-align: middle;
+    background: transparent url(/img/select-arr.svg) no-repeat 100% 50%;
+    background-size: 20px 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.select-box .select {
+    width: 100%;
+    border-bottom: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+#footer .contact{
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+
+
+#footer .menu, #footer address {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer address {
+    
+    gap: 5px 20px;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+#footer .menu {
+    padding-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#footer .select-box::after {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: navy;
+    background-image: url(../img/family-site-plus.svg);
+    background-position: center center;
+    background-size: 25px 25px;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+    
+}
+    
+#footer .select-box.active::after {
+    background-image: url(../img/family-site-minus.svg);
+    
+}
+
+#footer .select {
+    border: none;
+}
+
+/* max-width:1600px */
+
+@media screen and (max-width:1600px){
+    #hyundai{
+        font-size: 18em;
+    }
+}
+
+/* max-width:1600px */
+
+
+
+/* max-width:1400px */
+
+
+@media screen and (max-width:1400px){
+    #hyundai{
+        font-size: 16em;
+    }
+
+    .menu-list {
+        margin-right: 200px;
+       
+    }
+
+
+    .page1 .text h1 {
+        font-size: 36px;
+
+    }
+
+   
+
+   
+}
+
+/* max-width:1400px */
+
+
+
+
+/* max-width:1200px */
+
+@media screen and (max-width:1210px){
+
+    #hyundai{
+        font-size: 14em;
+    }
+
+    .menu-list{
+        margin-right: 100px;
+    }
+
+
+
+    .page1 .text h1 {
+        font-size: 30px;
+
+    }
+
+    .section_bg h3 .text {
+       font-size: 35px;
+    }
+
+    .section_bg h3 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+}
+
+/* max-width:1200px */
+
+
+
+/* max-width:1080px */
+
+@media screen and (max-width:1080px){
+
+    .container .box h1 {
+        font-size: 60px;
+      
+    }
+
+    #hyundai {
+        font-size: 12em;
+    }
+
+    .menu-list{
+        margin-right: 0;
+    }
+
+    .menu-list {
+        margin-right: 100px;
+       
+    }
+
+
+    .page1 .text h1 {
+        font-size: 28px;
+    }
+
+    .section_bg h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .section_bg h3 .text {
+        font-size: 30px;
+    }
+
+
+}
+
+/* max-width:1080px */
+
+
+
+@media (max-width:1020px){
+    .container .box h1 {
+        font-size: 26px;
+    }
+
+    .menu-list .list .nav-link {
+        padding: 2.5rem 1rem;
+        
+    }
+
+    .menu-list {
+        margin-right: 200px;
+       
+    }
+ 
+}
+
+/* max-width:960px */
+
+@media (max-width:960px){
+
+
+    header:hover .logo a{
+        background-image: url(../img/logo_white.png);
+    }
+    
+
+    .logo a {
+        width: 130px;
+        background-size: cover;
+    }
+
+    
+
+
+    body.opened-nav #header .nav-wrap::before {
+        z-index: 1;
+        opacity: 1;
+    }
+
+
+    .nav-toggle-label{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        z-index: 2;
+    }
+
+
+
+    .menu-list{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        height: calc(100vh - 60px);
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+
+
+    .nav-toggle:checked~.menu-list{
+        transform: translateX(0);
+        
+    }
+
+   
+   
+    
+    .list:hover .dropdown {
+        display: none; 
+    }  
+
+
+     
+
+    .nav-toggle:checked~.menu-list{
+        display: block;
+    }
+
+
+    .menu-list .list {
+        margin: 0;
+
+    }
+
+    .menu-list .list .nav-link{
+        color: #000;
+
+
+    }
+
+    .dropdown-icon {
+        display: inline-block;
+    
+    }    
+
+    .list:hover .dropdown-icon {
+        stroke: #0aa0d2;
+    }
+
+  
+
+    .list.active .dropdown {
+        display: block;
+        background: #fff;
+    }
+
+    
+    .dropdown {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        padding-left: 0;
+    }
+
+    .dropdown-menu {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+
+    
+   
+    
+    .dropdown-menu a {
+        color: #000;
+        white-space: nowrap;
+    }
+
+    header:hover{
+        background-color: transparent;
+    }
+    
+    header:hover .menu-list .list .nav-link{
+        color: #000;
+    }
+
+   #footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    } 
+
+    #footer > .cont {
+        flex-direction: column;
+
+    }
+
+    #footer .menu {
+        order: 2;
+    }
+
+    #footer_logo {
+        width: 40vw;
+    }
+
+    #footer  > .cont + .cont {
+        margin-top: 20px;
+    }
+
+    #footer .contact {
+        border: none;
+    }
+
+    #footer .copyright {
+        margin-top: 30px;
+    }
+}
+
+/* max-width:960px */
+
+
+/* max-width:913px */
+
+@media (max-width:913px){
+    #hyundai {
+        font-size: 10em;
+    }
+
+    .page2 .car {
+        box-sizing: border-box;
+        width: 587px;
+    ;
+    }
+
+}
+
+/* max-width:913px */
+
+
+/* max-width:820px */
+
+@media (max-width:820px){
+  
+
+
+    .page-header h2 {
+        font-size: 60px;
+        
+    }
+
+    .page-header ul button {
+        font-size: 16px;
+      
+    }
+    
+}
+/* max-width:820px */
+
+
+
+/* max-width:768px */
+
+
+@media (max-width:768px){
+
+    #hyundai {
+        font-size: 8em;
+        bottom: -20px;
+    }
+    
+    .nav-wrapper {
+        padding:10px 20px;
+    }
+
+    .sectoion1 .page1 {
+        flex-direction: column;
+    }
+
+    .page1 .text {
+        margin-top: 30px;
+    
+    }
+
+
+    .page1 .text h1 {
+        text-align: center;
+    }
+
+
+
+    .section_bg h3 .text{
+        display: none;
+    }
+
+    .section_bg h3 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: -20vh;
+        line-height: 50px;
+    }
+
+    .carBox ul {
+       flex-direction: column;
+       margin: 0 auto;
+       margin-top: 100px;
+    }
+
+    .carBox li {
+        width: 95%;
+        margin:0 auto;
+    }
+
+    .carBox .box1 .image-box {
+        margin-bottom: 13px;
+    }
+
+    
+    
+}   
+
+
+/* max-width:768px */
+
+
+
+/* max-width:740px */
+
+@media (max-width:740px){
+    .page-header {
+      flex-direction: column;
+    }
+
+    .page-header h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+/* max-width:740px */
+
+
+
+/* max-width:620px */
+
+@media (max-width:620px){
+    #hyundai {
+        font-size: 6em;
+        bottom: -10px;
+    }
+
+  
+
+    .section_bg h3 {
+        font-size: 30px;
+       
+    }
+
+}    
+/* max-width:620px */
+
+
+
+/* max-width:560px */
+
+@media (max-width:560px){
+    .page1 .car {
+        width: 100%;
+    }
+
+    .page1 .text h1 {
+        font-size: 24px;
+    }
+
+
+    .section_bg h3 {
+        font-size: 26px;
+    }
+
+}
+
+/* max-width:560px */
+
+
+
+/*max width: 430px*/
+
+
+@media (max-width:430px){
+   
+
+    .container .box h1 {
+        font-size: 20px;
+    }
+
+    #hyundai {
+        font-size: 5em;
+    }
+
+    .page1 .text {
+        margin-top: -60px;
+    }
+
+    .page1.card2 {
+        margin-top: 6em;
+    }
+
+    .section_bg h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+   
+}
+
+
+/*max width: 430px*/
+
+
+
+/*max width: 390px*/
+
+@media (max-width:390px){
+    .page1 .text h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
+/*max width: 390px*/
+
+
+
+/* min-width: 1141px */
+
+@media (min-width: 1141px) {
+    .data-list.col-2 > li {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+/* min-width: 1141px */
+
+
+
+
+
+/* min-width: 1281px */
+
+
+
+@media (min-width: 1281px) {
+
+    
+
+
+    #footer > .cont {
+        padding-left: 210px;
+        padding-right: 210px;
+    }
+}
+
+
+/* min-width: 1281px */
+
+
+
+
+
+/* min-width: 961px */
+
+
+@media (min-width: 961px) {
+
+
+
+    #footer .cont.site {
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-right: 210px;
+        padding-left: 210px;
+
+    }
+
+ 
+    #footer > .cont {
+        padding-right: 210px;
+        padding-left: 210px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    #footer .select-box {
+        min-width: 230px;
+    }
+
+    #footer .cont.contact > address + .copyright {
+        padding-left: 30px;
+     
+    }
+}
+
+
+/* min-width: 961px */
